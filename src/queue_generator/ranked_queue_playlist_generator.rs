@@ -31,6 +31,12 @@ impl Default for Playlist {
 
 impl PlaylistMaker {
 
+    const fn get_diff(x: &i32) -> &'static str {
+        match x {
+            1 => "Easy", 3 => "Normal", 5 => "Hard", 7 => "Expert", 9 => "ExpertPlus", _ => "ExpertPlus"
+        }
+    }
+
     pub fn new(data: Arc<Mutex<AppData>>) -> Self {
         Self { data, playlist: Default::default() }
     }
@@ -49,7 +55,7 @@ impl PlaylistMaker {
     }
     
     fn make_difficulty(diff: &Difficulties) -> Difficulty {
-        Difficulty{characteristic: "Standard".to_owned(), name: get_diff(&diff.difficulty).to_owned()}
+        Difficulty{characteristic: "Standard".to_owned(), name: Self::get_diff(&diff.difficulty).to_owned()}
     }
     
     fn make_song(song_name: String, song_hash: String, level_author: String, difficulties: Vec<Difficulty>) -> Song {
@@ -92,7 +98,7 @@ impl PlaylistMaker {
         lock!(self.data).process_amount = 99.0 / (queue_data.len() as f32);
         let songs = self.make_song_list_async(queue_data);
         let data = lock!(self.data).clone();
-        let image = if data.image_path.is_empty() { encode_base64(include_bytes!("../../queue.png").to_vec()) } else { encode_base64_file(&data.image_path) };
+        let image = if data.image_path.is_empty() { Self::encode_base64(include_bytes!("../../queue.png").to_vec()) } else { Self::encode_base64_file(&data.image_path) };
         self.playlist = Playlist{name: data.title, author: data.author, description: data.description, image, songs};
         self
     }
@@ -104,28 +110,23 @@ impl PlaylistMaker {
         self.playlist.serialize(&mut ser).unwrap_or_default();
         String::from_utf8(buf).unwrap_or("{}".to_string())
     }
-}
-
-const fn get_diff(x: &i32) -> &'static str {
-    match x {
-        1 => "Easy", 3 => "Normal", 5 => "Hard", 7 => "Expert", 9 => "ExpertPlus", _ => "ExpertPlus"
+    
+    fn encode_base64(bytes: Vec<u8>) -> String {
+        "data:image/png;base64,".to_owned() + &general_purpose::STANDARD.encode(bytes)
+    }
+    
+    fn encode_base64_file(path: &str) -> String {
+        let output = Self::read_file(path);
+        if output.is_err() {return "".to_owned()}
+        let extension = path.split(".").collect::<Vec<&str>>().get(1).unwrap().to_owned();
+        "data:image/".to_owned() +  &extension + ";base64," + &general_purpose::STANDARD.encode(output.unwrap())
+    }
+    
+    fn read_file(path: &str) -> io::Result<Vec<u8>> {
+        let file = File::open(path)?;
+        let mut buffer = Vec::new();
+        BufReader::new(file).read_to_end(&mut buffer)?;
+        Ok(buffer)
     }
 }
 
-pub fn encode_base64(bytes: Vec<u8>) -> String {
-    "data:image/png;base64,".to_owned() + &general_purpose::STANDARD.encode(bytes)
-}
-
-pub fn encode_base64_file(path: &str) -> String {
-    let output = read_file(path);
-    if output.is_err() {return "".to_owned()}
-    let extension = path.split(".").collect::<Vec<&str>>().get(1).unwrap().to_owned();
-    "data:image/".to_owned() +  &extension + ";base64," + &general_purpose::STANDARD.encode(output.unwrap())
-}
-
-fn read_file(path: &str) -> io::Result<Vec<u8>> {
-    let file = File::open(path)?;
-    let mut buffer = Vec::new();
-    BufReader::new(file).read_to_end(&mut buffer)?;
-    Ok(buffer)
-}
