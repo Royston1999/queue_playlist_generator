@@ -8,7 +8,7 @@ use std::{fs, thread, sync::{Arc, Mutex}, time::Duration};
 use eframe::{egui, IconData};
 use egui::{Vec2, RichText, Color32, Sense, Context};
 use queue_generator::ranked_queue_playlist_generator::PlaylistMaker;
-use queue_playlist_maker::lock;
+use queue_playlist_maker::{lock, text_edit};
 
 fn main() -> Result<(), eframe::Error> {
     env_logger::init();
@@ -90,26 +90,12 @@ impl eframe::App for PlaylistMakerUI {
             
             let mut app_data = lock!(self.app_data);
 
-            ui.horizontal(|ui| {
-                let name_label = ui.label("Playlist Title: ");
-                egui::TextEdit::singleline(&mut app_data.title).hint_text("title").show(ui).response.labelled_by(name_label.id);
-            });
-            ui.horizontal(|ui| {
-                let name_label = ui.label("Playlist Author: ");
-                egui::TextEdit::singleline(&mut app_data.author).hint_text("author").show(ui).response.labelled_by(name_label.id);
-            });
-            ui.horizontal(|ui| {
-                let name_label = ui.label("Playlist Image: ");
-                egui::TextEdit::singleline(&mut app_data.image_path).hint_text("image path").show(ui).response.labelled_by(name_label.id);
-            });
-            ui.horizontal(|ui| {
-                let name_label = ui.label("Output File Path: ");
-                egui::TextEdit::singleline(&mut app_data.output_path).hint_text("./playlist.json").show(ui).response.labelled_by(name_label.id);
-            });
-            ui.horizontal(|ui| {
-                let name_label = ui.label("Playlist Description: ");
-                ui.text_edit_multiline(&mut app_data.description).labelled_by(name_label.id);
-            });
+            text_edit!("PlaylistTitle: ", "title", app_data.title, ui);
+            text_edit!("Playlist Author: ", "author", app_data.author, ui);
+            text_edit!("Playlist Image: ", "image path", app_data.image_path, ui);
+            text_edit!("Output File Path: ", "./playlist.json", app_data.output_path, ui);
+            text_edit!("Playlist Description: ", "", app_data.description, ui, multiline);
+
             ui.vertical_centered(|ui| {
                 let sense = if app_data.progress > 0.0 {Sense::focusable_noninteractive()} else {Sense::click()};
                 let button = ui.add_sized([120.0, 40.0], egui::Button::new(RichText::new("Make Playlist").size(15.0)).sense(sense));
