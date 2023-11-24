@@ -1,4 +1,4 @@
-use std::{error::Error, io::{self, BufReader, Read}, fs::File, sync::{Arc, Mutex}};
+use std::{error::Error, fs, sync::{Arc, Mutex}};
 use base64::{engine::general_purpose, Engine};
 use queue_playlist_maker::lock;
 use rayon::iter::{IntoParallelIterator, ParallelIterator};
@@ -116,17 +116,10 @@ impl PlaylistMaker {
     }
     
     fn encode_base64_file(path: &str) -> String {
-        let output = Self::read_file(path);
+        let output = fs::read(path);
         if output.is_err() {return "".to_owned()}
         let extension = path.split(".").collect::<Vec<&str>>().last().unwrap().to_owned();
         "data:image/".to_owned() +  &extension + ";base64," + &general_purpose::STANDARD.encode(output.unwrap())
-    }
-    
-    fn read_file(path: &str) -> io::Result<Vec<u8>> {
-        let file = File::open(path)?;
-        let mut buffer = Vec::new();
-        BufReader::new(file).read_to_end(&mut buffer)?;
-        Ok(buffer)
     }
 }
 
