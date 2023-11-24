@@ -1,0 +1,1079 @@
+{
+    "playlistTitle": "cgfg",
+    "playlistAuthor": "fgh",
+    "playlistDescription": "playlist of ranked queue mapsnnn",
+    "image": "",
+    "songs": [
+        {
+            "songName": "Feral",
+            "levelAuthorName": "shrado, Schwank & Fnyt",
+            "hash": "CD9A0681958C095DAD4809D790B8C7FE3C67566B",
+            "difficulties": [
+                {
+                    "characteristic": "Standard",
+                    "name": "Normal"
+                },
+                {
+                    "characteristic": "Standard",
+                    "name": "Hard"
+                },
+                {
+                    "characteristic": "Standard",
+                    "name": "Expert"
+                },
+                {
+                    "characteristic": "Standard",
+                    "name": "ExpertPlus"
+                }
+            ]
+        },
+        {
+            "songName": "Lights, Camera, Action! - Studiopolis Zone Act 1",
+            "levelAuthorName": "Dereknalox123 & Elecast",
+            "hash": "2C531B43E7670268B1C743F71A3BADD3A50B873B",
+            "difficulties": [
+                {
+                    "characteristic": "Standard",
+                    "name": "Easy"
+                },
+                {
+                    "characteristic": "Standard",
+                    "name": "Normal"
+                },
+                {
+                    "characteristic": "Standard",
+                    "name": "Hard"
+                },
+                {
+                    "characteristic": "Standard",
+                    "name": "Expert"
+                },
+                {
+                    "characteristic": "Standard",
+                    "name": "ExpertPlus"
+                }
+            ]
+        },
+        {
+            "songName": "FAKE IDOL",
+            "levelAuthorName": "Vegetable Mapping Team",
+            "hash": "F927EED1F6F10D998CCB696DEFD4E7CD5D07C822",
+            "difficulties": [
+                {
+                    "characteristic": "Standard",
+                    "name": "Easy"
+                },
+                {
+                    "characteristic": "Standard",
+                    "name": "Normal"
+                },
+                {
+                    "characteristic": "Standard",
+                    "name": "Hard"
+                },
+                {
+                    "characteristic": "Standard",
+                    "name": "Expert"
+                },
+                {
+                    "characteristic": "Standard",
+                    "name": "ExpertPlus"
+                }
+            ]
+        },
+        {
+            "songName": "Raving Bounce",
+            "levelAuthorName": "cerret, unluckyL & Aquaflee",
+            "hash": "F48B6C8A5B9B90B0EB797F82B232A9325D2743D4",
+            "difficulties": [
+                {
+                    "characteristic": "Standard",
+                    "name": "Hard"
+                },
+                {
+                    "characteristic": "Standard",
+                    "name": "Expert"
+                },
+                {
+                    "characteristic": "Standard",
+                    "name": "ExpertPlus"
+                }
+            ]
+        },
+        {
+            "songName": "RESISTER",
+            "levelAuthorName": "Klondike",
+            "hash": "D102602FFB9AEF7073A437257F4DBA9FA0B66AF0",
+            "difficulties": [
+                {
+                    "characteristic": "Standard",
+                    "name": "Easy"
+                },
+                {
+                    "characteristic": "Standard",
+                    "name": "Normal"
+                },
+                {
+                    "characteristic": "Standard",
+                    "name": "Hard"
+                },
+                {
+                    "characteristic": "Standard",
+                    "name": "Expert"
+                },
+                {
+                    "characteristic": "Standard",
+                    "name": "ExpertPlus"
+                }
+            ]
+        },
+        {
+            "songName": "FLYING OUT TO THE SKY",
+            "levelAuthorName": "Jabob & Narwhal",
+            "hash": "CBE61397CC3B20E06D7F0F060B8B6A431142C737",
+            "difficulties": [
+                {
+                    "characteristic": "Standard",
+                    "name": "Hard"
+                },
+                {
+                    "characteristic": "Standard",
+                    "name": "Expert"
+                },
+                {
+                    "characteristic": "Standard",
+                    "name": "ExpertPlus"
+                }
+            ]
+        },
+        {
+            "songName": "Feral",
+            "levelAuthorName": "miitchel, Jabob & Hades",
+            "hash": "C678F67C54E8258AC38D290A514AEBE4745C3E35",
+            "difficulties": [
+                {
+                    "characteristic": "Standard",
+                    "name": "Expert"
+                },
+                {
+                    "characteristic": "Standard",
+                    "name": "ExpertPlus"
+                }
+            ]
+        },
+        {
+            "songName": "Exit This Earth's Atomosphere",
+            "levelAuthorName": "dentalstonk",
+            "hash": "920E1D5A27EF13E99C616CE9856A0EF162593464",
+            "difficulties": [
+                {
+                    "characteristic": "Standard",
+                    "name": "Hard"
+                },
+                {
+                    "characteristic": "Standard",
+                    "name": "Expert"
+                },
+                {
+                    "characteristic": "Standard",
+                    "name": "ExpertPlus"
+                }
+            ]
+        },
+        {
+            "songName": "U-0",
+            "levelAuthorName": "Cobayo",
+            "hash": "577B0912B9EFFD7672E2BDA2D883825C08A158A9",
+            "difficulties": [
+                {
+                    "characteristic": "Standard",
+                    "name": "Normal"
+                },
+                {
+                    "characteristic": "Standard",
+                    "name": "Hard"
+                },
+                {
+                    "characteristic": "Standard",
+                    "name": "Expert"
+                },
+                {
+                    "characteristic": "Standard",
+                    "name": "ExpertPlus"
+                }
+            ]
+        },
+        {
+            "songName": "Destroy, Destroy, Destroy The Happy End",
+            "levelAuthorName": "Marsh & Gabriel",
+            "hash": "322FD6448D7ABFAD5680F989BDBD40FA0ECA5259",
+            "difficulties": [
+                {
+                    "characteristic": "Standard",
+                    "name": "Hard"
+                },
+                {
+                    "characteristic": "Standard",
+                    "name": "Expert"
+                },
+                {
+                    "characteristic": "Standard",
+                    "name": "ExpertPlus"
+                }
+            ]
+        },
+        {
+            "songName": "¡MAS CRAZY!",
+            "levelAuthorName": "Frost",
+            "hash": "C8E71B6C29AAB4A4C35D9F1C4A4DDA0124FC03F6",
+            "difficulties": [
+                {
+                    "characteristic": "Standard",
+                    "name": "Expert"
+                },
+                {
+                    "characteristic": "Standard",
+                    "name": "ExpertPlus"
+                }
+            ]
+        },
+        {
+            "songName": "666",
+            "levelAuthorName": "ComplexFrequency & Narwhal",
+            "hash": "38EFD8B760806A40B489241C679122AB82E3D8E6",
+            "difficulties": [
+                {
+                    "characteristic": "Standard",
+                    "name": "Normal"
+                },
+                {
+                    "characteristic": "Standard",
+                    "name": "Hard"
+                },
+                {
+                    "characteristic": "Standard",
+                    "name": "Expert"
+                },
+                {
+                    "characteristic": "Standard",
+                    "name": "ExpertPlus"
+                }
+            ]
+        },
+        {
+            "songName": "Don't You Dare",
+            "levelAuthorName": "Timbo",
+            "hash": "9AB34127C77E504A48F30BA7F618DC75588CF810",
+            "difficulties": [
+                {
+                    "characteristic": "Standard",
+                    "name": "Normal"
+                },
+                {
+                    "characteristic": "Standard",
+                    "name": "Hard"
+                },
+                {
+                    "characteristic": "Standard",
+                    "name": "Expert"
+                },
+                {
+                    "characteristic": "Standard",
+                    "name": "ExpertPlus"
+                }
+            ]
+        },
+        {
+            "songName": "Dystopian Exodus of the Magical Girls",
+            "levelAuthorName": "abcbadq",
+            "hash": "DFE011D8FB614AB4233E75310474097DF3FA2BB6",
+            "difficulties": [
+                {
+                    "characteristic": "Standard",
+                    "name": "Hard"
+                },
+                {
+                    "characteristic": "Standard",
+                    "name": "Expert"
+                },
+                {
+                    "characteristic": "Standard",
+                    "name": "ExpertPlus"
+                }
+            ]
+        },
+        {
+            "songName": "10.000 Luchtballonnen",
+            "levelAuthorName": "yabje, fqrb & Elecast",
+            "hash": "E22381D7E8EA16C9C211530450948E7DCBDB42C4",
+            "difficulties": [
+                {
+                    "characteristic": "Standard",
+                    "name": "Normal"
+                },
+                {
+                    "characteristic": "Standard",
+                    "name": "Hard"
+                },
+                {
+                    "characteristic": "Standard",
+                    "name": "Expert"
+                },
+                {
+                    "characteristic": "Standard",
+                    "name": "ExpertPlus"
+                }
+            ]
+        },
+        {
+            "songName": "Harumachi Clover",
+            "levelAuthorName": "Jevk",
+            "hash": "1ECFEA715C5CBBB95EC1CBC00E64630ED484F88A",
+            "difficulties": [
+                {
+                    "characteristic": "Standard",
+                    "name": "Easy"
+                },
+                {
+                    "characteristic": "Standard",
+                    "name": "Normal"
+                },
+                {
+                    "characteristic": "Standard",
+                    "name": "Hard"
+                },
+                {
+                    "characteristic": "Standard",
+                    "name": "Expert"
+                },
+                {
+                    "characteristic": "Standard",
+                    "name": "ExpertPlus"
+                }
+            ]
+        },
+        {
+            "songName": "mystique as iris",
+            "levelAuthorName": "take_nyan",
+            "hash": "1DEE1BCA9E1D9EDA6182DA31FA4CF65D91FE8B15",
+            "difficulties": [
+                {
+                    "characteristic": "Standard",
+                    "name": "Easy"
+                },
+                {
+                    "characteristic": "Standard",
+                    "name": "Normal"
+                },
+                {
+                    "characteristic": "Standard",
+                    "name": "Hard"
+                },
+                {
+                    "characteristic": "Standard",
+                    "name": "Expert"
+                },
+                {
+                    "characteristic": "Standard",
+                    "name": "ExpertPlus"
+                }
+            ]
+        },
+        {
+            "songName": "Not Lindsey",
+            "levelAuthorName": "Dereknalox123",
+            "hash": "BF4E535337C2BE05101AE255612A7F58F2D8DEA6",
+            "difficulties": [
+                {
+                    "characteristic": "Standard",
+                    "name": "Expert"
+                },
+                {
+                    "characteristic": "Standard",
+                    "name": "ExpertPlus"
+                }
+            ]
+        },
+        {
+            "songName": "dont say \"i can sample that\" for 24 hours challenge",
+            "levelAuthorName": "oermergeesh",
+            "hash": "02C51C5A144A2424C229FBE7C653F2DA1606050F",
+            "difficulties": [
+                {
+                    "characteristic": "Standard",
+                    "name": "Easy"
+                },
+                {
+                    "characteristic": "Standard",
+                    "name": "Normal"
+                },
+                {
+                    "characteristic": "Standard",
+                    "name": "Hard"
+                },
+                {
+                    "characteristic": "Standard",
+                    "name": "Expert"
+                },
+                {
+                    "characteristic": "Standard",
+                    "name": "ExpertPlus"
+                }
+            ]
+        },
+        {
+            "songName": "Deity Mode",
+            "levelAuthorName": "Elecast",
+            "hash": "0278E62AE28761F65D7F6DB458A5DFB2C9F8BDC8",
+            "difficulties": [
+                {
+                    "characteristic": "Standard",
+                    "name": "Expert"
+                },
+                {
+                    "characteristic": "Standard",
+                    "name": "ExpertPlus"
+                }
+            ]
+        },
+        {
+            "songName": "NEXT.ERA",
+            "levelAuthorName": "unluckyL",
+            "hash": "0BF658D51E5F8D23CF4528E7F40D2A1D2F2E17DF",
+            "difficulties": [
+                {
+                    "characteristic": "Standard",
+                    "name": "Expert"
+                },
+                {
+                    "characteristic": "Standard",
+                    "name": "ExpertPlus"
+                }
+            ]
+        },
+        {
+            "songName": "sAtElLites",
+            "levelAuthorName": "Hener",
+            "hash": "1E8C09B98EB32F7A745035165D49FAF8D5688B0B",
+            "difficulties": [
+                {
+                    "characteristic": "Standard",
+                    "name": "Hard"
+                },
+                {
+                    "characteristic": "Standard",
+                    "name": "Expert"
+                },
+                {
+                    "characteristic": "Standard",
+                    "name": "ExpertPlus"
+                }
+            ]
+        },
+        {
+            "songName": "The Other Side",
+            "levelAuthorName": "BigSlick",
+            "hash": "7FCB3AD6356CCBBB9C343CB0F92989BE84B88F0F",
+            "difficulties": [
+                {
+                    "characteristic": "Standard",
+                    "name": "Hard"
+                },
+                {
+                    "characteristic": "Standard",
+                    "name": "Expert"
+                },
+                {
+                    "characteristic": "Standard",
+                    "name": "ExpertPlus"
+                }
+            ]
+        },
+        {
+            "songName": "Unwelcome School",
+            "levelAuthorName": "abcbadq",
+            "hash": "059C2739666DE82785D8AD60FC48E1516237886A",
+            "difficulties": [
+                {
+                    "characteristic": "Standard",
+                    "name": "Hard"
+                },
+                {
+                    "characteristic": "Standard",
+                    "name": "Expert"
+                },
+                {
+                    "characteristic": "Standard",
+                    "name": "ExpertPlus"
+                }
+            ]
+        },
+        {
+            "songName": "Los! Los! Los!",
+            "levelAuthorName": "CoolingCloset",
+            "hash": "D37A04B8544B3DF5B0570DF501B8D60F6B949D21",
+            "difficulties": [
+                {
+                    "characteristic": "Standard",
+                    "name": "Normal"
+                },
+                {
+                    "characteristic": "Standard",
+                    "name": "Hard"
+                },
+                {
+                    "characteristic": "Standard",
+                    "name": "Expert"
+                },
+                {
+                    "characteristic": "Standard",
+                    "name": "ExpertPlus"
+                }
+            ]
+        },
+        {
+            "songName": "Signal",
+            "levelAuthorName": "yabje & Bitz",
+            "hash": "5B68EC0D7DE8DD2360AE049473F0A10102E5AE25",
+            "difficulties": [
+                {
+                    "characteristic": "Standard",
+                    "name": "Easy"
+                },
+                {
+                    "characteristic": "Standard",
+                    "name": "Normal"
+                },
+                {
+                    "characteristic": "Standard",
+                    "name": "Hard"
+                },
+                {
+                    "characteristic": "Standard",
+                    "name": "Expert"
+                },
+                {
+                    "characteristic": "Standard",
+                    "name": "ExpertPlus"
+                }
+            ]
+        },
+        {
+            "songName": "Catch a Fire",
+            "levelAuthorName": "abcbadq",
+            "hash": "98ADDC9A38F86651BD496F86299B225C533F713D",
+            "difficulties": [
+                {
+                    "characteristic": "Standard",
+                    "name": "Expert"
+                },
+                {
+                    "characteristic": "Standard",
+                    "name": "ExpertPlus"
+                }
+            ]
+        },
+        {
+            "songName": "Bimbo Limbo",
+            "levelAuthorName": "Jabob & Elecast",
+            "hash": "3E347523DD147F14B557EE45930E7BE1B875EFA4",
+            "difficulties": [
+                {
+                    "characteristic": "Standard",
+                    "name": "Easy"
+                },
+                {
+                    "characteristic": "Standard",
+                    "name": "Normal"
+                },
+                {
+                    "characteristic": "Standard",
+                    "name": "Hard"
+                },
+                {
+                    "characteristic": "Standard",
+                    "name": "Expert"
+                },
+                {
+                    "characteristic": "Standard",
+                    "name": "ExpertPlus"
+                }
+            ]
+        },
+        {
+            "songName": "5733P BOMB",
+            "levelAuthorName": "Feco",
+            "hash": "473F0A429CA94954508463EFEB4D10557AD952B2",
+            "difficulties": [
+                {
+                    "characteristic": "Standard",
+                    "name": "Easy"
+                },
+                {
+                    "characteristic": "Standard",
+                    "name": "Normal"
+                },
+                {
+                    "characteristic": "Standard",
+                    "name": "Hard"
+                },
+                {
+                    "characteristic": "Standard",
+                    "name": "Expert"
+                },
+                {
+                    "characteristic": "Standard",
+                    "name": "ExpertPlus"
+                }
+            ]
+        },
+        {
+            "songName": "BS//Recall",
+            "levelAuthorName": "Bitz & Joshabi",
+            "hash": "323B50AF4587067FE7E0DAB16E8A674A23C59DEC",
+            "difficulties": [
+                {
+                    "characteristic": "Standard",
+                    "name": "Normal"
+                },
+                {
+                    "characteristic": "Standard",
+                    "name": "Hard"
+                },
+                {
+                    "characteristic": "Standard",
+                    "name": "Expert"
+                },
+                {
+                    "characteristic": "Standard",
+                    "name": "ExpertPlus"
+                }
+            ]
+        },
+        {
+            "songName": "SswwiinnddlleerR!!",
+            "levelAuthorName": "abcbadq",
+            "hash": "0509DB1AB571F6FE577AA7207805C31F9976D431",
+            "difficulties": [
+                {
+                    "characteristic": "Standard",
+                    "name": "Hard"
+                },
+                {
+                    "characteristic": "Standard",
+                    "name": "Expert"
+                },
+                {
+                    "characteristic": "Standard",
+                    "name": "ExpertPlus"
+                }
+            ]
+        },
+        {
+            "songName": "Everlasting Eternity",
+            "levelAuthorName": "BSWC Team",
+            "hash": "A4FEEAEC5084AA3E19056CFC9FCBD3FB1B312CF7",
+            "difficulties": [
+                {
+                    "characteristic": "Standard",
+                    "name": "Easy"
+                },
+                {
+                    "characteristic": "Standard",
+                    "name": "Normal"
+                },
+                {
+                    "characteristic": "Standard",
+                    "name": "Hard"
+                },
+                {
+                    "characteristic": "Standard",
+                    "name": "Expert"
+                },
+                {
+                    "characteristic": "Standard",
+                    "name": "ExpertPlus"
+                }
+            ]
+        },
+        {
+            "songName": "What You Know",
+            "levelAuthorName": "Taddus",
+            "hash": "53D2AECF5458DA7A3F8F753BEFE964071027BC52",
+            "difficulties": [
+                {
+                    "characteristic": "Standard",
+                    "name": "Easy"
+                },
+                {
+                    "characteristic": "Standard",
+                    "name": "Normal"
+                },
+                {
+                    "characteristic": "Standard",
+                    "name": "Hard"
+                }
+            ]
+        },
+        {
+            "songName": "Soul Xerosis",
+            "levelAuthorName": "Alpal & Helloiamdaan",
+            "hash": "6853AAA053F17A6AA460A78967C03F714D599AD3",
+            "difficulties": [
+                {
+                    "characteristic": "Standard",
+                    "name": "ExpertPlus"
+                }
+            ]
+        },
+        {
+            "songName": "Cure For Me",
+            "levelAuthorName": "Groovy",
+            "hash": "F2BC50524C9117959598902AF6B64CC6B70DEEDC",
+            "difficulties": [
+                {
+                    "characteristic": "Standard",
+                    "name": "ExpertPlus"
+                }
+            ]
+        },
+        {
+            "songName": "VENTEN",
+            "levelAuthorName": "Kival Evan",
+            "hash": "C7F52DC50C1AB73D13614B898C0063AFAF0A0183",
+            "difficulties": [
+                {
+                    "characteristic": "Standard",
+                    "name": "Easy"
+                },
+                {
+                    "characteristic": "Standard",
+                    "name": "Normal"
+                },
+                {
+                    "characteristic": "Standard",
+                    "name": "Hard"
+                },
+                {
+                    "characteristic": "Standard",
+                    "name": "Expert"
+                },
+                {
+                    "characteristic": "Standard",
+                    "name": "ExpertPlus"
+                }
+            ]
+        },
+        {
+            "songName": "HYPER ULTRA JACKPOT (The Swamp Spat It Out)",
+            "levelAuthorName": "Aquaflee & Helloiamdaan",
+            "hash": "1D682FE3E07D09A2F2B6D34AF54B262C01BCAB37",
+            "difficulties": [
+                {
+                    "characteristic": "Standard",
+                    "name": "Expert"
+                },
+                {
+                    "characteristic": "Standard",
+                    "name": "ExpertPlus"
+                }
+            ]
+        },
+        {
+            "songName": "In Seventh Heaven",
+            "levelAuthorName": "epicmoo34",
+            "hash": "62FA60A3D91B320C5F48BF6DBFC4417656859D18",
+            "difficulties": [
+                {
+                    "characteristic": "Standard",
+                    "name": "ExpertPlus"
+                }
+            ]
+        },
+        {
+            "songName": "REKKA RESONANCE",
+            "levelAuthorName": "Marsh",
+            "hash": "A39AE82DE8FFAA661281A24004895A1218619DA6",
+            "difficulties": [
+                {
+                    "characteristic": "Standard",
+                    "name": "Easy"
+                },
+                {
+                    "characteristic": "Standard",
+                    "name": "Normal"
+                },
+                {
+                    "characteristic": "Standard",
+                    "name": "Hard"
+                },
+                {
+                    "characteristic": "Standard",
+                    "name": "Expert"
+                },
+                {
+                    "characteristic": "Standard",
+                    "name": "ExpertPlus"
+                }
+            ]
+        },
+        {
+            "songName": "Starry Jet",
+            "levelAuthorName": "Rusty & Elecast",
+            "hash": "B63A55D6B4BCAC5517CAF07373F37C40D4B46C94",
+            "difficulties": [
+                {
+                    "characteristic": "Standard",
+                    "name": "Hard"
+                },
+                {
+                    "characteristic": "Standard",
+                    "name": "Expert"
+                },
+                {
+                    "characteristic": "Standard",
+                    "name": "ExpertPlus"
+                }
+            ]
+        },
+        {
+            "songName": "ΩΩPARTS",
+            "levelAuthorName": "Aimedhades16",
+            "hash": "679A6FD50B4FE29BA91F4CEC4AB526ADD85BD755",
+            "difficulties": [
+                {
+                    "characteristic": "Standard",
+                    "name": "ExpertPlus"
+                }
+            ]
+        },
+        {
+            "songName": "Phosphorescence",
+            "levelAuthorName": "unluckyL & WalkingKat",
+            "hash": "0ACE9C8D04B2666478E5CF2BF9A2C44AFBDE4939",
+            "difficulties": [
+                {
+                    "characteristic": "Standard",
+                    "name": "Hard"
+                },
+                {
+                    "characteristic": "Standard",
+                    "name": "Expert"
+                },
+                {
+                    "characteristic": "Standard",
+                    "name": "ExpertPlus"
+                }
+            ]
+        },
+        {
+            "songName": "MariannE",
+            "levelAuthorName": "Emir & Zana",
+            "hash": "3E25862798D760F617AF2579EC8D684ADF9BC85D",
+            "difficulties": [
+                {
+                    "characteristic": "Standard",
+                    "name": "Hard"
+                },
+                {
+                    "characteristic": "Standard",
+                    "name": "Expert"
+                },
+                {
+                    "characteristic": "Standard",
+                    "name": "ExpertPlus"
+                }
+            ]
+        },
+        {
+            "songName": "Always",
+            "levelAuthorName": "Rail Zen",
+            "hash": "D691EDF72EEE29BA317EF48AE3B1B09E234DE96A",
+            "difficulties": [
+                {
+                    "characteristic": "Standard",
+                    "name": "Hard"
+                }
+            ]
+        },
+        {
+            "songName": "parrying a rapid​-​fire combo (it's very hard i have to time it perfectly)",
+            "levelAuthorName": "DiscobaIIerz",
+            "hash": "DD6790D85B865C252CD2D579A8C8ABD56B0CA3E9",
+            "difficulties": [
+                {
+                    "characteristic": "Standard",
+                    "name": "Expert"
+                },
+                {
+                    "characteristic": "Standard",
+                    "name": "ExpertPlus"
+                }
+            ]
+        },
+        {
+            "songName": "& Intelligence",
+            "levelAuthorName": "Elecast",
+            "hash": "FD0CF958DD24BBB3C7EB789EDC4D6E1028BE6EA1",
+            "difficulties": [
+                {
+                    "characteristic": "Standard",
+                    "name": "Normal"
+                },
+                {
+                    "characteristic": "Standard",
+                    "name": "Hard"
+                },
+                {
+                    "characteristic": "Standard",
+                    "name": "Expert"
+                },
+                {
+                    "characteristic": "Standard",
+                    "name": "ExpertPlus"
+                }
+            ]
+        },
+        {
+            "songName": "Dimension Wars",
+            "levelAuthorName": "Hades, Daan, Josh & Aqua",
+            "hash": "480D6C152CEE217F972AD0E010760C4FF6EB524A",
+            "difficulties": [
+                {
+                    "characteristic": "Standard",
+                    "name": "Hard"
+                },
+                {
+                    "characteristic": "Standard",
+                    "name": "Expert"
+                },
+                {
+                    "characteristic": "Standard",
+                    "name": "ExpertPlus"
+                }
+            ]
+        },
+        {
+            "songName": "God-ish",
+            "levelAuthorName": "muffn",
+            "hash": "8B9A1F6B05498A519212798C77B71524E2193E04",
+            "difficulties": [
+                {
+                    "characteristic": "Standard",
+                    "name": "Hard"
+                },
+                {
+                    "characteristic": "Standard",
+                    "name": "Expert"
+                },
+                {
+                    "characteristic": "Standard",
+                    "name": "ExpertPlus"
+                }
+            ]
+        },
+        {
+            "songName": "dullscythe lullaby",
+            "levelAuthorName": "Phøenix",
+            "hash": "8E9B5D1A043ED755B92815249F701C6F076C36B8",
+            "difficulties": [
+                {
+                    "characteristic": "Standard",
+                    "name": "Hard"
+                },
+                {
+                    "characteristic": "Standard",
+                    "name": "Expert"
+                },
+                {
+                    "characteristic": "Standard",
+                    "name": "ExpertPlus"
+                }
+            ]
+        },
+        {
+            "songName": "Rock It",
+            "levelAuthorName": "RetrX",
+            "hash": "AC3DDB1B52EE960868F98B25421A30D7D4B6203E",
+            "difficulties": [
+                {
+                    "characteristic": "Standard",
+                    "name": "Easy"
+                },
+                {
+                    "characteristic": "Standard",
+                    "name": "Normal"
+                },
+                {
+                    "characteristic": "Standard",
+                    "name": "Hard"
+                },
+                {
+                    "characteristic": "Standard",
+                    "name": "Expert"
+                },
+                {
+                    "characteristic": "Standard",
+                    "name": "ExpertPlus"
+                }
+            ]
+        },
+        {
+            "songName": "Fracture Ray",
+            "levelAuthorName": "Jabob, Bitz & Luck",
+            "hash": "9E3879211F3E7EE6095BEBC8BAD7C2D79E9A3A3A",
+            "difficulties": [
+                {
+                    "characteristic": "Standard",
+                    "name": "Expert"
+                },
+                {
+                    "characteristic": "Standard",
+                    "name": "ExpertPlus"
+                }
+            ]
+        },
+        {
+            "songName": "Wildstar",
+            "levelAuthorName": "DaftMaple",
+            "hash": "680C3C253756EB4D594639573D97E32C73B91A79",
+            "difficulties": [
+                {
+                    "characteristic": "Standard",
+                    "name": "Easy"
+                },
+                {
+                    "characteristic": "Standard",
+                    "name": "Normal"
+                },
+                {
+                    "characteristic": "Standard",
+                    "name": "Hard"
+                },
+                {
+                    "characteristic": "Standard",
+                    "name": "Expert"
+                },
+                {
+                    "characteristic": "Standard",
+                    "name": "ExpertPlus"
+                }
+            ]
+        },
+        {
+            "songName": "Birdsong",
+            "levelAuthorName": "1100ping_boi",
+            "hash": "1A8D9F11B2BBF76AA49A6810C0DD21D6AED13B48",
+            "difficulties": [
+                {
+                    "characteristic": "Standard",
+                    "name": "Expert"
+                },
+                {
+                    "characteristic": "Standard",
+                    "name": "ExpertPlus"
+                }
+            ]
+        }
+    ]
+}
