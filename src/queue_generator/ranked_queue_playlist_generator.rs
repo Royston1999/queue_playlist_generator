@@ -118,7 +118,7 @@ impl PlaylistMaker {
     fn encode_base64_file(path: &str) -> String {
         let output = Self::read_file(path);
         if output.is_err() {return "".to_owned()}
-        let extension = path.split(".").collect::<Vec<&str>>().get(1).unwrap().to_owned();
+        let extension = path.split(".").collect::<Vec<&str>>().last().unwrap().to_owned();
         "data:image/".to_owned() +  &extension + ";base64," + &general_purpose::STANDARD.encode(output.unwrap())
     }
     
