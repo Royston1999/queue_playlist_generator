@@ -153,7 +153,7 @@ fn make_playlist_async(data_ptr: Arc<Mutex<AppData>>) {
 fn get_file_path(output_path: String) -> String {
     match output_path.trim() {
         "" => "playlist.json".to_string(),
-        _ => output_path.trim().to_string()
+        path => if !path.ends_with(".json") {format!("{path}.json")} else {path.to_string()}
     }
 }
 
