@@ -1,8 +1,9 @@
-use std::{error::Error, fs, sync::{Arc, Mutex}};
+use std::{error::Error, fs, sync::{Arc, Mutex}, path::PathBuf};
 use base64::{engine::general_purpose, Engine};
 use queue_playlist_maker::lock;
 use rayon::iter::{IntoParallelIterator, ParallelIterator};
 use serde::{Deserialize, Serialize};
+use serde_json::{ser::PrettyFormatter, Serializer};
 
 use crate::{AppData, GenStatus};
 
@@ -98,15 +99,23 @@ impl PlaylistMaker {
         lock!(self.data).process_amount = 99.0 / (queue_data.len() as f32);
         let songs = self.make_song_list_async(queue_data);
         let data = lock!(self.data).clone();
-        let image = if data.image_path.is_empty() { Self::encode_base64(include_bytes!("../../queue.png").to_vec()) } else { Self::encode_base64_file(&data.image_path) };
+        let image = Self::encode_image(data.image_path);
         self.playlist = Playlist{name: data.title, author: data.author, description: data.description, image, songs};
         self
     }
 
+    fn encode_image(buf: PathBuf) -> String {
+        match buf.to_str() {
+            Some("None") => "".to_string(),
+            Some("Default") => Self::encode_base64(include_bytes!("../../queue.png").to_vec()),
+            Some(path) => Self::encode_base64_file(path), 
+            None => "".to_string(),
+        }
+    }
+
     pub fn serialise(&self) -> String {
         let mut buf = Vec::new();
-        let formatter = serde_json::ser::PrettyFormatter::with_indent(b"    ");
-        let mut ser = serde_json::Serializer::with_formatter(&mut buf, formatter);
+        let mut ser = Serializer::with_formatter(&mut buf, PrettyFormatter::with_indent(b"    "));
         self.playlist.serialize(&mut ser).unwrap_or_default();
         String::from_utf8(buf).unwrap_or("{}".to_string())
     }
@@ -122,4 +131,3 @@ impl PlaylistMaker {
         "data:image/".to_owned() +  &extension + ";base64," + &general_purpose::STANDARD.encode(output.unwrap())
     }
 }
-

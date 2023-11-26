@@ -3,12 +3,13 @@
 mod queue_generator;
 
 
-use std::{fs, thread, sync::{Arc, Mutex}, time::Duration};
+use std::{fs, thread, sync::{Arc, Mutex}, time::Duration, path::PathBuf, ffi::OsStr, env::current_dir};
 
 use eframe::{egui, IconData};
-use egui::{Vec2, RichText, Color32, Sense, Context};
+use egui::{Vec2, RichText, Color32, Sense, Context, Label, pos2};
 use queue_generator::ranked_queue_playlist_generator::PlaylistMaker;
 use queue_playlist_maker::{lock, text_edit};
+use rfd::FileDialog;
 
 fn main() -> Result<(), eframe::Error> {
     env_logger::init();
@@ -45,7 +46,7 @@ struct PlaylistMakerUI {
 pub struct AppData {
     title: String,
     author: String,
-    image_path: String,
+    image_path: PathBuf,
     output_path: String,
     description: String,
     process_amount: f32,
@@ -59,7 +60,7 @@ impl AppData {
         Self {
             title: "".to_owned(),
             author: "".to_owned(),
-            image_path: "".to_owned(),
+            image_path: PathBuf::new(),
             output_path: "".to_owned(),
             description: "playlist of ranked queue maps".to_owned(),
             process_amount: 0.0,
@@ -86,18 +87,18 @@ impl eframe::App for PlaylistMakerUI {
     fn update(&mut self, ctx: &egui::Context, _frame: &mut eframe::Frame) {
         custom_window_frame(ctx, "Queue Playlist Maker", _frame, |ui| {
             ui.spacing_mut().text_edit_width = 150.0;
-            ui.spacing_mut().item_spacing = Vec2{x: 5.0, y: 10.0};
+            ui.spacing_mut().item_spacing = Vec2::new(5.0, 10.0);
             
             let mut app_data = lock!(self.app_data);
 
             text_edit!("PlaylistTitle: ", "title", app_data.title, ui);
             text_edit!("Playlist Author: ", "author", app_data.author, ui);
-            text_edit!("Playlist Image: ", "image path", app_data.image_path, ui);
+            label_with_file_picker(ui, &mut app_data.image_path);
             text_edit!("Output File Path: ", "./playlist.json", app_data.output_path, ui);
             text_edit!("Playlist Description: ", "", app_data.description, ui, multiline);
-
+            
             ui.vertical_centered(|ui| {
-                let sense = if app_data.progress > 0.0 {Sense::focusable_noninteractive()} else {Sense::click()};
+                let sense = if app_data.gen_status != GenStatus::IDLE {Sense::focusable_noninteractive()} else {Sense::click()};
                 let button = ui.add_sized([120.0, 40.0], egui::Button::new(RichText::new("Make Playlist").size(15.0)).sense(sense));
                 if button.clicked() {
                     make_playlist_async(self.app_data.clone());
@@ -112,6 +113,40 @@ impl eframe::App for PlaylistMakerUI {
             });
             drop(app_data);
         });
+    }
+}
+
+fn label_with_file_picker(ui: &mut egui::Ui, image_path: &mut PathBuf) {
+    ui.horizontal(|ui| {
+        ui.label("Playlist Image: ");
+        ui.spacing_mut().item_spacing.x = 10.0;
+        ui.allocate_ui_with_layout(Vec2::new(150.0, 10.0), *ui.layout(), |ui| {
+            let image_name = get_image_name(image_path);
+            let (pos, text_galley, response) = Label::new(&image_name).truncate(true).sense(Sense::click()).layout_in_ui(ui);
+
+            let colour = if response.hovered() { Color32::RED } else { ui.style().interact(&response).text_color() };
+            ui.painter().galley_with_color(pos2(pos.x, pos.y-1.6), text_galley.galley, colour);
+
+            if response.clicked() { *image_path = ["None"].iter().collect(); }
+            if response.double_clicked() { *image_path =  ["Default"].iter().collect(); }
+            response.on_hover_text("Click to Remove\nDouble Click for Default");
+        });
+
+        if ui.button("browse").clicked() {
+            match FileDialog::new().add_filter("image", &["jpg", "jpeg", "png"]).set_directory(current_dir().unwrap_or_default()).pick_file() {
+                Some(path) => *image_path = path,
+                None => ()
+            }
+        }
+    });
+}
+
+fn get_image_name(buf: &PathBuf) -> String {
+    match buf.to_str() {
+        Some("None") => "No Image".to_string(),
+        Some("Default") => "Default".to_string(),
+        Some(_) => buf.file_name().unwrap_or(OsStr::new("No Image")).to_str().unwrap_or("No Image").to_owned(), 
+        None => "No Image".to_string(),
     }
 }
 
